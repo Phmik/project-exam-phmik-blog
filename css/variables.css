@@ -1,0 +1,12 @@
+:root {
+
+    /* FONTS */ 
+
+    --main-font: futura-pt-condensed, sans-serif;
+    --bold-font: 700;
+    --medium-font: 500;
+    --style: normal;
+
+    /* COLORS */ 
+    --back-color: rgba(181, 193, 255, 80%);
+}

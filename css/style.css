@@ -1,0 +1,45 @@
+body {
+    margin: 0 auto;
+}
+
+.header-container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*  NAVIGATION  */ 
+
+.main-nav {
+    background-color: rgba(181, 193, 255, 80%);
+    padding: 10px;
+    max-width: 500px;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav a {
+    font-family: var(--main-font);
+    font-weight: var(--medium-font);
+    text-decoration: none;
+    color: #66572A;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.main-nav .nav-active {
+    color: black;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+
