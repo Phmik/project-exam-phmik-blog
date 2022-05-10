@@ -16,7 +16,7 @@ ul {
 /*  NAVIGATION  */ 
 
 .main-nav {
-    background-color: rgba(181, 193, 255, 80%);
+    background-color: var(--back-color);
     padding: 10px;
     max-width: 500px;
 }
@@ -27,15 +27,15 @@ ul {
 
 .main-nav a {
     font-family: var(--main-font);
-    font-weight: var(--medium-font);
+    font-weight: var(--bold-font);
     text-decoration: none;
-    color: #66572A;
+    color: rgb(255, 255, 255);
     margin-left: 2rem;
     font-size: 1.3rem;
 }
 
 .main-nav .nav-active {
-    color: black;
+    color: rgb(255, 146, 29);
 }
 
 .main-nav a:hover {
