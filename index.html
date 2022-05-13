@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3085842107.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/gad5dhw.css">
@@ -12,7 +13,8 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="images/header.jpg" alt="Game Frame header image">
+            <img src="images/header-gf4.png" alt="Game Frame header image">
+            <div class="nav-container">
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html" class="nav-active">Home</a></li>
@@ -21,13 +23,27 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <form id="searchForm" class="search-form">
+                <input type="search" id="search" name="search-bar" placeholder="Search...">
+                <button class="search-button"><span class="fas fa-search"></span></button>
+            </form>
+            </div>
         </div>
     </header>
         <main>
             <div class="wrapper">
-
+                <div class="headline">
+                    <h1 class="headline-tag">Posts</h1>
+                </div>
+                <div class="carousel-list" id="carouselList"></div>
+                <div class="carouselnumbers" id="carouselNumbers"></div>
             </div>
+
+            
         </main>
-    
+    <footer>
+        <p>Phillip Mikalsen Project Exam</p>
+    </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

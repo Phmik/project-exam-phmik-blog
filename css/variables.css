@@ -9,4 +9,7 @@
 
     /* COLORS */ 
     --back-color: rgba(0, 0, 0, 0.8);
+    --grey-bg: rgba(0, 0, 0, 0.4);
+    --hover-bg: rgba(0, 0, 0, 0.6);
+    --orange: rgb(255, 146, 29);
 }

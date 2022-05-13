@@ -2,25 +2,41 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    font-family: var(--main-font);
+    font-weight: var(--bold-font);
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .header-container {
     margin: 0 auto;
     max-width: 1000px;
     width: 100%;
 }
 
-ul {
-    list-style: none;
-}
-
-
 /*  NAVIGATION  */ 
 
-.main-nav {
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--back-color);
-    padding: 10px;
-    max-width: 500px;
+    padding: 0px 20px;
+    flex-wrap: nowrap;
 }
 
+.main-nav {
+    padding: 10px 0px;
+}
+
+.main-nav ul {
+    padding: 0px;
+}
 .main-nav li {
     display: inline-block;
 }
@@ -35,11 +51,73 @@ ul {
 }
 
 .main-nav .nav-active {
-    color: rgb(255, 146, 29);
+    color: var(--orange);
 }
 
 .main-nav a:hover {
     text-decoration: underline;
 }
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    height: 44px;
+    max-width: 300px;
+    width: 100%
+}
+.search-form input {
+    all: unset;
+    font: var(--main-font);
+    font-weight: var(--medium-font);
+    outline: none;
+    border: none;
+    width: 100%;
+    padding:10px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: var(--grey-bg);
+}
+
+.search-form input::placeholder {
+    color: #fff;
+    font-family: var(--main-font);
+    font-weight: var(--medium-font);
+    font-size: 0.8rem;
+}
+
+input:hover {
+    background-color: var(--hover-bg);
+}
+
+.search-button {
+    all: unset;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.fa-search {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: var(--orange);
+}
+
+.fa-search:hover {
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--back-color);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px 0px;
+    color: #fff;
+    font-family: var(--main-font);
+    font-weight: var(--bold-font);
+}
+
 
 
