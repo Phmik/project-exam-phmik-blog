@@ -32,7 +32,7 @@ const updateDots = (currentDot, targetDot) => {
 prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.active-slide');
     const prevSlide = currentSlide.previousElementSibling;
-    const currentDot = dotsTracker.querySelector('current-slide');
+    const currentDot = dotsTracker.querySelector('.current-slide');
     const prevDot = currentDot.previousElementSibling;
 
     moveToSlide(track, currentSlide, prevSlide);
