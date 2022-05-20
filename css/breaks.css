@@ -126,107 +126,84 @@ footer {
 /* CAROUSEL */ 
 
 .carousel {
+    position: absolute;
+    height: 600px;
+    width: 80%;
     margin: 0 auto;
-    transition: transform 250ms ease-in;
 }
 
-.carousel-button {
-    cursor: pointer;
-}
-
-.carousel-track {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    transition: transform 500ms ease-in;
+.carousel-images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .carousel-track-container {
-    display: flex;
-    flex-direction: row;
+    background: lightgreen;
+    position: relative;
+    overflow: hidden;
 }
 
-.carousel-row-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center
+.carousel-track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
 }
-
 
 .carousel-slide {
-
-    margin: 10px;
-    text-align: center;
-    justify-content: center;
-    background: var(--back-color);
-    color: var(--orange);
-    font-family: var(--main-font);
-    font-size: 1.2rem;
-    display: flex;
-    display: none;
-    flex-wrap: wrap;
-    height: 700px;
-}
-
-.active-slide {
-    display: flex;
-}
-
-
-.carousel-slide img {
-    display: flex;
-    border-radius: 10%;
-    padding: 20px;
-    max-width: 300px; 
-}  
-
-.slide-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.slide-row {
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.next-button,
+/* CAROUSEL BUTTONS */ 
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
 .back-button {
+    left: -40px;
+}
+
+.next-button {
+    right: -40px;
+}
+
+.back-button,
+.next-button {
     font-size: 2rem;
     border: none;
     background: none;
     padding: 0 15px;
 }
 
-.next-button:hover,
-.back-button:hover {
+.back-button:hover,
+.next-button:hover {
     color: var(--orange);
 }
 
-.carousel-column-container {
-    display: flex;
-    flex-direction: column;
-}
+/* carousel indicators */ 
 
 .carousel-dots {
+    background: pink;
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .carousel-indicator {
-    border: none;
+    border: 0;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 15px; 
+    width: 15px;
     height: 15px;
-    margin: 0 10px;
-    cursor: pointer;
+    background: black;
+    margin: 0 auto;
 }
-
-.carousel-indicator.current-slide {
-    background: rgba(0, 0, 0, 0.75);
-}
-
