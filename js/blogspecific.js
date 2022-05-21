@@ -1,7 +1,7 @@
 const queryString = document.location.search;
-const blogParams = new URLSearchParams(querystring);
+const blogParams = new URLSearchParams(queryString);
 const blogId = blogParams.get("id");
-const idURL = ("https://phmik.no/gameframe/wp-json/wp/v2/posts?per_page=20&acf_format=standard" + blogId);
+const idURL = ("https://phmik.no/gameframe/wp-json/wp/v2/posts?per_page=20&acf_format=standard/" + blogId);
 
 async function fetchBlog() {
     try {
@@ -24,5 +24,5 @@ fetchBlog();
 
 function renderBlog(blogResult) {
     document.title = "";
-    document.title = `${blogResult.title}`;
+    document.title = `${blogResult.title} | ${blogResult.type}`;
 }
