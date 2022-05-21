@@ -1,18 +1,18 @@
+const blogDetails = document.querySelector(".blog-headline")
 const queryString = document.location.search;
 const blogParams = new URLSearchParams(queryString);
 const blogId = blogParams.get("id");
-const idURL = ("https://phmik.no/gameframe/wp-json/wp/v2/posts?per_page=20&acf_format=standard/" + blogId);
+const idURL = "https://phmik.no/gameframe/wp-json/wp/v2/posts/" + blogId;
 
 async function fetchBlog() {
     try {
         const response = await fetch(idURL);
         const blogResult = await response.json();
-        console.log(blogResult);
-        if(!blogResult.ok) {
-            throw new Error(`Looks like a problem occured loading the API`);
+        if(!response.ok){
+            throw new Error(`oops. Loading error`);
         }
         else {
-            renderBlog(renderBlog);
+            renderBlogItem(blogResult)
         }
     }
     catch(error) {
@@ -22,7 +22,7 @@ async function fetchBlog() {
 
 fetchBlog();
 
-function renderBlog(blogResult) {
+function renderBlogItem(blogResult) {
     document.title = "";
-    document.title = `${blogResult.title} | ${blogResult.type}`;
+    document.title = `${blogResult.type} | ${blogResult.acf.title}`;
 }

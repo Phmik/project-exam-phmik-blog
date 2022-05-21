@@ -81,10 +81,10 @@ async function getPosts(fetchPosts) {
 
                 slides[0].innerHTML += `
                                     <div class="slide-column">
-                                        <a href="blogspecific.html?id=${blog.id}" class="blog-post">${blog.title.rendered}</a
+                                        <a href="blogspecific.html?id=${blog.id}" class="blog-post">${blog.title.rendered}</a>
                                         <div class="slide-row">
                                             <div class="slide-img-container">
-                                                <img src="${blog.acf.Ragnaros}" class="carousel-image">
+                                                <img src="${blog.acf.images}" class="carousel-image">
                                             </div>  
                                         </div>
                                     </div>`
@@ -99,10 +99,10 @@ async function getPosts(fetchPosts) {
 
                 slides[1].innerHTML += `
                                     <div class="slide-column">
-                                        <h2>${blog.title.rendered}</h2>
+                                    <a href="blogspecific.html?id=${blog.id}" class="blog-post">${blog.title.rendered}</a>
                                         <div class="slide-row">
                                             <div class="slide-img-container">
-                                                <img src="${blog.acf.Ragnaros}" class="carousel-image">
+                                                <img src="${blog.acf.images}" class="carousel-image">
                                             </div>  
                                         </div>
                                     </div>`
@@ -117,10 +117,10 @@ async function getPosts(fetchPosts) {
 
                 slides[2].innerHTML += `
                                     <div class="slide-column">
-                                        <h2>${blog.title.rendered}</h2>
+                                    <a href="blogspecific.html?id=${blog.id}" class="blog-post">${blog.title.rendered}</a>
                                         <div class="slide-row">
                                             <div class="slide-img-container">
-                                                <img src="${blog.acf.Ragnaros}" class="carousel-image">
+                                                <img src="${blog.acf.images}" class="carousel-image">
                                             </div>  
                                         </div>
                                     </div>`

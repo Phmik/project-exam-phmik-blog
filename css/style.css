@@ -5,6 +5,7 @@ body {
 h1 {
     font-family: var(--main-font);
     font-weight: var(--bold-font);
+    font-size: 2rem;
 }
 
 img { 
@@ -22,6 +23,7 @@ img {
     max-width: 1000px;
     width: 100%;
 }
+
 
 /*  NAVIGATION  */ 
 
@@ -138,12 +140,14 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    transition: transform 500ms ease-in;
+    transition: transform 250ms ease-in;
+    justify-content: center;
 }
 
 .carousel-track-container {
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
 }
 
 .carousel-row-container {
@@ -154,18 +158,28 @@ footer {
 
 
 .carousel-slide {
-
     margin: 10px;
     text-align: center;
     justify-content: center;
     background: var(--back-color);
-    color: var(--orange);
-    font-family: var(--main-font);
-    font-size: 1.2rem;
     display: flex;
-    display: none;
     flex-wrap: wrap;
-    height: 700px;
+    display: none;
+    height: 600px;
+
+}
+
+.carousel-slide a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    font-weight: var(--bold-font);
+}
+
+.carousel-slide a:hover {
+    color: var(--orange);
+    text-decoration: underline;
 }
 
 .active-slide {
@@ -174,16 +188,18 @@ footer {
 
 
 .carousel-slide img {
-    display: flex;
     border-radius: 10%;
-    padding: 20px;
-    max-width: 300px; 
-}  
+    padding: 20px 20px 0px 20px;
+    max-width: 300px;
+    max-height: 200px;
+} 
+
 
 .slide-column {
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .slide-row {
