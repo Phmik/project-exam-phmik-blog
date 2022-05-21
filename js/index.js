@@ -81,7 +81,7 @@ async function getPosts(fetchPosts) {
 
                 slides[0].innerHTML += `
                                     <div class="slide-column">
-                                        <a href="blogspecific.html" class="blog-post">${blog.title.rendered}</a
+                                        <a href="blogspecific.html?id=${blog.id}" class="blog-post">${blog.title.rendered}</a
                                         <div class="slide-row">
                                             <div class="slide-img-container">
                                                 <img src="${blog.acf.Ragnaros}" class="carousel-image">
