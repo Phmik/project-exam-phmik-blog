@@ -2,9 +2,16 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+h1, h2 {
     font-family: var(--main-font);
     font-weight: var(--bold-font);
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+h2 {
     font-size: 2rem;
 }
 
