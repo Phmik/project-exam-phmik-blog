@@ -17,7 +17,6 @@ async function fetchBlog() {
         }
         else {
             renderBlogItems(blogResult)
-            renderBlogList(listResult)
         }
     }
     catch(error) {
@@ -40,7 +39,9 @@ function renderBlogItems(blogResult) {
                                     <p><span class="date">Date: </span><em>${blogResult.modified}</em></p>
                                 </div>
                                 <div class="blog-img-container"> 
-                                    <img src="${blogResult.acf.images}">
+                                    <div class="modal-container">
+                                        <img src="${blogResult.acf.images}" alt="ragnaros" class="modal-hover" onclick="onClick(this)">
+                                    </div> 
                                 </div>
                                 <div class="blog-main-content">
                                     <h2>
@@ -49,22 +50,16 @@ function renderBlogItems(blogResult) {
                                     <p>${blogResult.acf.paragraph}</p>
                                     <p>${blogResult.acf.paragraphtwo}</p>
                                 </div>
+                                <div id="modalTrack" class="modal" onclick="this.style.display='none'"> 
+                                    <span class="modal-close"&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <div class="modal-content">
+                                        <img id="modalImg" class="modal-img">
+                                    </div>
+                                </div>
                             </section`
 }
 
-async function fetchBlogList(listResult) {
-    try {
-        const listResponse = await fetch(listURL);
-        const listResult = await listResponse.json();
-        console.log(listResult);
-        sidebarTrack.innerHTML = "";
-        sidebarTrack.innerHTML += `
-                                 <li class="nav-sidebar-list
-                                    <a href="blogspecific.html?id=${listResult.id}" class="list-posts">${listResult.title.rendered}</a>
-                                </li>`
-    }
-    catch(error) {
-
-    }
-    
+function onClick(element) {
+    document.getElementById("modalImg").src = element.src;
+    document.getElementById("modalTrack").style.display = "block";
 }
