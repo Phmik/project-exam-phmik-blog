@@ -38,8 +38,30 @@
                 <hr class="headline-hr">
             </div>
             <div class="form-container">
-                <form action="" id="contactForm" class="contact-form">
-                    <label for="name"></label>
+                <form action="" id="contactForm" class="contact-form" method="post" novalidate>
+                    <fieldset class="contact-field">
+                        <div class="contact-column">
+                            <label for="fullName" class="contact-label">Full name</label>
+                            <input type="text" name="full-name" class="contact-details" id="fullName" autocomplete="off" onkeyup="validation(event)">
+                            <span id="nameValidation" class="validate-text"></span>
+                        </div>
+                        <div class="contact-column">
+                            <label for="email" class="contact-label">Email</label>
+                            <input type="email" name="mail" class="contact-details" id="email" autocomplete="off" onkeyup="validation(event)">
+                            <span id="emailValidation" class="validate-text"></span>
+                        </div>
+                        <div class="contact-column">
+                            <label for="subject" class="contact-label">Subject</label>
+                            <input type="text" name="sub" class="contact-details" id="subject" autocomplete="off" onkeyup="validation(event)">
+                            <span id="subjectValidation" class="validate-text"></span>
+                        </div>
+                        <div class="contact-column">
+                            <label for="message" class="contact-label">Your message</label>
+                            <textarea name="mess" id="message" cols="10" rows="5" autocomplete="off" class="contact-details" onkeyup="validation(event)"></textarea>
+                            <span id="messageValidation"></span>
+                        </div>
+                        <button id="contactButton" class="contact-button">Send message</button>
+                    </fieldset>
                 </form>
             </div>
         </div>
@@ -47,4 +69,5 @@
     <footer>
         <p>Phillip Mikalsen Project Exam</p>
     </footer>
+    <script src="js/contact.js"></script>
 </body>
