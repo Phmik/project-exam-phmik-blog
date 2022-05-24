@@ -85,7 +85,8 @@ async function getPosts(fetchPosts) {
                                         <div class="slide-row">
                                             <div class="slide-img-container">
                                                 <img src="${blog.acf.images}" class="carousel-image">
-                                            </div>  
+                                                <a href="blogspecific.html?id=${blog.id}"><button class="slide-button">View more</button></a>
+                                            </div>
                                         </div>
                                     </div>`
         }
@@ -103,6 +104,7 @@ async function getPosts(fetchPosts) {
                                         <div class="slide-row">
                                             <div class="slide-img-container">
                                                 <img src="${blog.acf.images}" class="carousel-image">
+                                                <button class="slide-button">View more</button>
                                             </div>  
                                         </div>
                                     </div>`
@@ -121,6 +123,7 @@ async function getPosts(fetchPosts) {
                                         <div class="slide-row">
                                             <div class="slide-img-container">
                                                 <img src="${blog.acf.images}" class="carousel-image">
+                                                <button class="slide-button">View more</button>
                                             </div>  
                                         </div>
                                     </div>`

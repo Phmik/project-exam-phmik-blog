@@ -172,7 +172,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     display: none;
-    height: 600px;
+    height: 700px;
 }
 
 .carousel-slide a {
@@ -199,6 +199,33 @@ footer {
     max-width: 300px;
     max-height: 200px;
 } 
+
+.slide-img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-button {
+    background-color: var(--lightgrey-bg);
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    align-self: center;
+    color: #fff;
+    font-family: var(--main-font);
+    font-weight: var(--bold-font);
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.slide-button:hover {
+    color: var(--orange);
+    background-color: var(--grey-bg);
+}
+
+
 
 
 .slide-column {
