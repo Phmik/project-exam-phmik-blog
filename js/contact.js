@@ -6,7 +6,7 @@ function validation(event) {
     const fullName = document.getElementById('fullName').value;
     const email = document.getElementById('email').value;
     const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value
+    const message = document.getElementById('message').value;
     const nameValidate = document.getElementById('nameValidation');
     const emailValidate = document.getElementById('emailValidation');
     const subjectValidate = document.getElementById('subjectValidation');
@@ -30,7 +30,7 @@ function validation(event) {
     else {
         nameValidate.classList.remove('validate-valid');
         nameValidate.classList.add('validate-invalid');
-        nameValidate.innerHTML = "Please enter a valid name"
+        nameValidate.innerHTML = "Please enter a valid name";
     }
     if(fullName == '') {
         nameValidate.classList.remove('validate-valid');

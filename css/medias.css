@@ -1,0 +1,28 @@
+@media only screen and (max-width: 735px) {
+
+    /* NAVIGATION */ 
+
+    .nav-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .main-nav a {
+        margin: 0;
+        padding: 0px 10px 0 0;
+    }
+
+    .search-form {
+        margin: 15px 0px;
+    }
+
+    /* CAROUSEL INDEX */ 
+
+    .carousel-slide {
+        height: auto;
+    }
+
+    .carousel-slide img {
+        max-width: 270px;
+    }
+}
