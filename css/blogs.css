@@ -1,0 +1,24 @@
+.blogs-content a {
+    font-size: 2.5rem;
+}
+
+.blogs-content h3 {
+    font-size: 1.5rem;
+}
+
+.blogs-content a,
+.blogs-content h3 {
+    font-family: var(--main-font);
+    font-weight: var(--bold-font);
+    color: #fff;
+    text-decoration: none;
+}
+
+.blogs-content {
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    background: var(--back-color);
+    display: flex;
+    flex-wrap: wrap;
+}

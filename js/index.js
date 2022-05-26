@@ -1,9 +1,8 @@
 const fetchPosts = "https://phmik.no/gameframe/wp-json/wp/v2/posts?per_page=20&acf_format=standard";
 const postsContainer = document.querySelector(".carousel");
-const track = document.querySelector(".carousel-track")
+const track = document.querySelector(".carousel-track");
 const slides = Array.from(track.children);
-console.log(slides)
-const slideImage = document.querySelector(".carousel-images")
+const slideImage = document.querySelector(".carousel-images");
 const nextButton = document.querySelector(".next-button");
 const prevButton = document.querySelector(".back-button");
 const dotsTracker = document.querySelector(".carousel-dots");
@@ -104,7 +103,7 @@ async function getPosts(fetchPosts) {
                                         <div class="slide-row">
                                             <div class="slide-img-container">
                                                 <img src="${blog.acf.images}" class="carousel-image">
-                                                <button class="slide-button">View more</button>
+                                                <a href="blogspecific.html?id=${blog.id}"><button class="slide-button">View more</button></a>
                                             </div>  
                                         </div>
                                     </div>`
@@ -123,7 +122,7 @@ async function getPosts(fetchPosts) {
                                         <div class="slide-row">
                                             <div class="slide-img-container">
                                                 <img src="${blog.acf.images}" class="carousel-image">
-                                                <button class="slide-button">View more</button>
+                                                <a href="blogspecific.html?id=${blog.id}"><button class="slide-button">View more</button></a>
                                             </div>  
                                         </div>
                                     </div>`

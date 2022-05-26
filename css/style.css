@@ -183,7 +183,8 @@ footer {
     font-weight: var(--bold-font);
 }
 
-.carousel-slide a:hover {
+.carousel-slide a:hover,
+.blogs-content a:hover {
     color: var(--orange);
     text-decoration: underline;
 }
