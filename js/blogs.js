@@ -19,11 +19,12 @@ async function getBlog(fetchPosts) {
     const blogResponse = await fetch(fetchPosts);
     const results = await blogResponse.json();
     console.log(results);
-    
+    blogContainer.innerHTML = "";
     for(let i = 0; i < results.length; i++) {
         const blogs = results[i];
         console.log(blogs)
         if(i <= 8) {
+            
             blogContainer.innerHTML += `
                                     <div class="blogs-content">
                                         <div class="blogs-column">

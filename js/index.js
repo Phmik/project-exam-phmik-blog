@@ -1,6 +1,7 @@
 const fetchPosts = "https://phmik.no/gameframe/wp-json/wp/v2/posts?per_page=20&acf_format=standard";
 const postsContainer = document.querySelector(".carousel");
 const track = document.querySelector(".carousel-track");
+const loader = document.querySelector(".loader");
 const slides = Array.from(track.children);
 const slideImage = document.querySelector(".carousel-images");
 const nextButton = document.querySelector(".next-button");
@@ -66,7 +67,6 @@ dotsTracker.addEventListener('click', e => {
 
 async function getPosts(fetchPosts) {
     try {
-
         const response = await fetch(fetchPosts);
         const posts = await response.json();
         console.log(posts)
@@ -77,7 +77,7 @@ async function getPosts(fetchPosts) {
                 }
                 const blog = posts[i];
                 console.log(blog)
-
+                loader.classList.remove('loader');
                 slides[0].innerHTML += `
                                     <div class="slide-column">
                                         <a href="blogspecific.html?id=${blog.id}" class="blog-post">${blog.title.rendered}</a>

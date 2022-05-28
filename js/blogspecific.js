@@ -29,6 +29,7 @@ fetchBlog();
 function renderBlogItems(blogResult) {
     document.title = "";
     document.title = `${blogResult.type} | ${blogResult.acf.title}`;
+    blogDetails.innerHTML = "";
     blogHeadline.innerHTML += `
                                 <h1>${blogResult.acf.title}</h1>
                                 <hr class="headline-hr">`
