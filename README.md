@@ -29,4 +29,5 @@ You can list a the tech stack that you've used over here
 ## Contact
 
 [My Email](phm@live.no)
+
 [My LinkedIn page](https://www.linkedin.com/in/phillip-mikalsen-4265a421a/)
