@@ -5,7 +5,10 @@
 ## Description
 
 We were set out to make a blog, with a theme of our own. I chose to make a blog about latest news and info about games.
-Almost everything is made using Wordpress, but fetching it through a REST API from Wordpress.
+Almost everything is made using Wordpress, but fetching it through a REST API from Wordpress. Main focus for the exam 
+was to improve on javascript. 
+
+
 
 There were some extra focus on:
 
@@ -21,9 +24,9 @@ You can list a the tech stack that you've used over here
 - HTML
 - CSS
 - JAVASCRIPT
+- Wordpress
 
 ## Contact
 
 [My Email](phm@live.no)
-
 [My LinkedIn page](https://www.linkedin.com/in/phillip-mikalsen-4265a421a/)
