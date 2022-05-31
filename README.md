@@ -19,8 +19,6 @@ There were some extra focus on:
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
 - HTML
 - CSS
 - JAVASCRIPT
