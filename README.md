@@ -36,7 +36,4 @@ One could say I learned more how in depth javascript actually go. What can actua
 2. Open files with your code editor
 
 ## Contact
-
-[My Email](phm@live.no)
-
 [My LinkedIn page](https://www.linkedin.com/in/phillip-mikalsen-4265a421a/)
