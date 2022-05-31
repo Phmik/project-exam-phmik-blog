@@ -22,18 +22,18 @@ There were some extra focus on:
 
 One could say I learned more how in depth javascript actually go. What can actually be done with Javascript. Was a fun project!
 
-## Installation
-
-1. Clone the repo
-
-2. Open files with your code editor
-
 ## Built With
 
 - HTML
 - CSS
 - JAVASCRIPT
 - Wordpress
+
+## Installation
+
+1. Clone the repo
+
+2. Open files with your code editor
 
 ## Contact
 
